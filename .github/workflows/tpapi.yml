@@ -93,6 +93,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/apostrophe:latest
-          cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/apostrophe:cache
-          cache-to: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/apostrophe:cache,mode=max
+          tags: ${{ secrets.DOCKER_USERNAME }}/tpapi:latest
+          cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/tpapi:cache
+          cache-to: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/tpapi:cache,mode=max
