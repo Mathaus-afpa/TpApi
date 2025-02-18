@@ -56,7 +56,6 @@ jobs:
           echo "Running DB Scripts"
           mysql -h 127.0.0.1 -P 3306 -u root -proot springboot < ./script.sql
 
-
       # Installer les dépendances du projet Java
       - name: Build Java Project with Maven
         run: mvn clean install
